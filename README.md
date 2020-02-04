@@ -27,8 +27,8 @@ int main()
     return 0;
 }
 ```
-Wall time taken: \~0.2ms
 Sample Output: ![](./images/gearoid.png)
+Wall time taken: \~0.2ms
 
 **Pros**
 1. Simple
@@ -306,3 +306,5 @@ Sample Output: ![](./images/matt.png)
 1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
 1. Only two threads are generated, and they only access one variable each - these variables do not need to be atomic
 1. The whole "fizz buzz" conditional logic could be put into a function
+
+# THE WINNER OF ROUND 1 IS ~~Matt~~ Ian!
