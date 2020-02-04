@@ -29,11 +29,11 @@ int main()
 ```
 Sample Output:
 
-Pros
+**Pros**
 1. Simple
 1. Uses functional logic
 
-Cons
+**Cons**
 1. Doesn't actually print "the numbers from 1 to 100"
 1. Variable names are vague - "in", "current"
 
@@ -83,41 +83,54 @@ int main()
 ```
 Sample Output:
 
-Pros
+**Pros**
 1. Simple
 1. Uses functional logic
 1. Good use of comments
 1. Condition-Variable combos read like English
+1. Lightweight - only has 1 dependency
 
-Cons
+**Cons**
 1. Doesn't actually print "the numbers from 1 to 100", also prints "Fizz $number" when the result should be "Fizz"
 
 ## Jarek
 ```
+#include <iostream>
+
+int main()
+{
+    for(int i = 1; i <= 100; ++i)
+    {
+        std::string msg = "";
+        msg.append((i % 3 == 0) ? "Fizz" : "");
+        msg.append((i % 5 == 0) ? "Buzz" : "");
+        msg.empty() ? printf("%i\n", i) : printf("%s\n", msg.c_str());
+    }
+}
 ```
 Sample Output:
 
-Pros
+**Pros**
 1. Simple
-1. Uses functional logic
-1. Good use of comments
-1. Condition-Variable combos read like English
+1. Solves the challenge
+1. Lightweight - only has 1 dependency
 
-Cons
-1. Doesn't actually print "the numbers from 1 to 100"
+**Cons**
+1. No comments
+1. Low readability
 
 ## Matt
 ```
 ```
 Sample Output:
 
-Pros
+**Pros**
 1. Simple
 1. Uses functional logic
 1. Good use of comments
 1. Condition-Variable combos read like English
 
-Cons
+**Cons**
 1. Doesn't actually print "the numbers from 1 to 100", also prints "Fizz $number" when the result should be "Fizz"
 
 ## Trevor
@@ -125,11 +138,11 @@ Cons
 ```
 Sample Output:
 
-Pros
+**Pros**
 1. Simple
 1. Uses functional logic
 1. Good use of comments
 1. Condition-Variable combos read like English
 
-Cons
+**Cons**
 1. Doesn't actually print "the numbers from 1 to 100"
