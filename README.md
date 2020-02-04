@@ -27,7 +27,8 @@ int main()
     return 0;
 }
 ```
-Sample Output:
+Wall time taken: \~0.2ms
+Sample Output: ![](./images/gearoid.png)
 
 **Pros**
 1. Simple
@@ -81,7 +82,8 @@ int main()
         
 }
 ```
-Sample Output:
+Wall time taken: \~0.25ms
+Sample Output: ![](./images/ian.png)
 
 **Pros**
 1. Simple
@@ -92,6 +94,7 @@ Sample Output:
 
 **Cons**
 1. Doesn't actually print "the numbers from 1 to 100", also prints "Fizz $number" when the result should be "Fizz"
+1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
 
 ## Jarek
 ```
@@ -108,7 +111,8 @@ int main()
     }
 }
 ```
-Sample Output:
+Wall time taken: \~0.5ms
+Sample Output: ![](./images/jarek.png)
 
 **Pros**
 1. Simple
@@ -118,6 +122,7 @@ Sample Output:
 **Cons**
 1. No comments
 1. Low readability
+1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
 
 ## Trevor
 ```
@@ -145,7 +150,8 @@ int main() {
     }
 }
 ```
-Sample Output:
+Wall time taken: \~0.5ms
+Sample Output: ![](./images/trevor.png)
 
 **Pros**
 1. Simple
@@ -281,7 +287,8 @@ void Buzz(int i) {
 //   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
 //   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
 ```
-Sample Output:
+Wall time taken: \~0.5ms
+Sample Output: ![](./images/matt.png)
 
 **Pros**
 1. Uses functional logic
@@ -291,9 +298,11 @@ Sample Output:
 1. Generalises the input - it could be any number, rather than just 100
 
 **Cons**
+1. Parallel implementation is wholly worse than the sequential solution without even getting better for larger numbers
 1. Doesn't have a summary comment section at the top of the code
 1. Uses 5 dependencies, where only 2 are actually needed
 1. Code itself has low readability
 1. Variables are vague - "n", "ifizz", "ibuzz"
 1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
 1. Only two threads are generated, and they only access one variable each - these variables do not need to be atomic
+1. The whole "fizz buzz" conditional logic could be put into a function
