@@ -119,6 +119,44 @@ Sample Output:
 1. No comments
 1. Low readability
 
+## Trevor
+```
+/*
+FizzBuzz.cpp - Trevor
+*/
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num = 1;
+
+    while (num < 101) {
+        if (((num%3)==0) && ((num%5) == 0)) {     //Check if value is divisible by 3 & 5
+            cout << "FizzBuzz" << endl;
+        } else if ((num%3) == 0) {                //Check if value is divisible by 3
+            cout << "Fizz" << endl;
+        } else if ((num%5) == 0) {                //Check if valueis divisible by 5
+            cout << "Buzz" << endl;
+        } else {
+            cout << num << endl;
+        }
+
+        num++;
+    }
+}
+```
+Sample Output:
+
+**Pros**
+1. Simple
+1. Lightweight - only has 1 dependency
+1. Solves the challenge
+
+**Cons**
+1. Readability relies on comments where variables could've been used
+1. Perfect use case for a switch statement
+1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
+
 ## Matt
 ```
 ```
@@ -132,17 +170,3 @@ Sample Output:
 
 **Cons**
 1. Doesn't actually print "the numbers from 1 to 100", also prints "Fizz $number" when the result should be "Fizz"
-
-## Trevor
-```
-```
-Sample Output:
-
-**Pros**
-1. Simple
-1. Uses functional logic
-1. Good use of comments
-1. Condition-Variable combos read like English
-
-**Cons**
-1. Doesn't actually print "the numbers from 1 to 100"
