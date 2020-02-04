@@ -1,3 +1,4 @@
+# THE WINNER OF ROUND 1 IS ~~Matt~~ Ian!
 # Coding Challenge 1 - FizzBuzz
 Challenge: Write a program that prints the numbers from 1 to 100 and for multiples of '3' print "Fizz" instead of the number, for the multiples of '5' print "Buzz" instead of the number and for multiples of both '3' and '5' print "FizzBuzz".
 ## Gearoid
@@ -306,5 +307,3 @@ Sample Output: ![](./images/matt.png)
 1. `return 0;` doesn't need to be included by default, but it is always better to be explicit
 1. Only two threads are generated, and they only access one variable each - these variables do not need to be atomic
 1. The whole "fizz buzz" conditional logic could be put into a function
-
-# THE WINNER OF ROUND 1 IS ~~Matt~~ Ian!
